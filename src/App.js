@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Weather from "./Weather"
+import CircleLoader from "react-spinners/CircleLoader";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Weather />
+         <CircleLoader color={`aquamarine`} loading={`true`} css={``} size={50} /> 
+          <Weather />
         <a
           className="App-link"
           href="https://reactjs.org"
